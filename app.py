@@ -6,7 +6,7 @@ popular_df = pickle.load(open('popular.pkl','rb'))
 pt = pickle.load(open('pt.pkl','rb'))
 books = pickle.load(open('books.pkl','rb'))
 similarity_scores = pickle.load(open('similarity_scores.pkl','rb'))
-app = Flask(__name__)
+flask_app = Flask(__name__)
 
 @app.route('/')
 def index():
@@ -44,5 +44,10 @@ def recommend():
     return render_template('Recommend.html', data=data)
 
 if __name__ == "__main__":
+<<<<<<< HEAD
     app.run(host="0.0.0.0", port=8000)
     
+=======
+    logging.info('Flask app Started')
+    flask_app.run(host="0.0.0.0", port=8000)
+>>>>>>> 6f4fc95b7b02d933a264a7dbbae41cf73cbfe8a9
