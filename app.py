@@ -46,8 +46,3 @@ def recommend():
 if __name__ == "__main__":
 <<<<<<< HEAD
     app.run(host="0.0.0.0", port=8000)
-    
-=======
-    logging.info('Flask app Started')
-    flask_app.run(host="0.0.0.0", port=8000)
->>>>>>> 6f4fc95b7b02d933a264a7dbbae41cf73cbfe8a9
