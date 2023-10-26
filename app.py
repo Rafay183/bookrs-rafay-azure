@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 import pickle
 import pickle4 as pickle
 import numpy as np
-
+import pandas as pd
 popular_df = pd.read_pickle(open('popular.pkl','rb'))
 pt = pd.read_pickle(open('pt.pkl','rb'))
 books = pd.read_pickle(open('books.pkl','rb'))
