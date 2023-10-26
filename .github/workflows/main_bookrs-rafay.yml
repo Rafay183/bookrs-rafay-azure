@@ -62,8 +62,8 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'app'
-          #slot-name: 'Production'
+          app-name: 'bookrs-rafay'
+          slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0ED2B546879745F3B035D4EBA70330AA }}
 
 
