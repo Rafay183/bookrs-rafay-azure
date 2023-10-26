@@ -64,9 +64,7 @@ jobs:
         with:
           app-name: 'bookrs-rafay'
           # slot-name: 'Production'
-          publish-profile: ./dist/bookrs-rafay
-            
-            # {{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0ED2B546879745F3B035D4EBA70330AA }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0ED2B546879745F3B035D4EBA70330AA }}
 
 
         
